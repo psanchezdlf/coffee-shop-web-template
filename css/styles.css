@@ -936,9 +936,16 @@ h1 {
   }
 }
 
+/* Fallback móvil: si por alguna razón el JS no añade .visible, mostrar contenido */
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
 
 /* =========================================================
 FIN DEL ARCHIVO CSS
 ========================================================= */
+
 
 
