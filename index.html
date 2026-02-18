@@ -1,0 +1,368 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Buns N' Roses — Pastelería & Cafetería</title>
+    <meta
+      name="description"
+      content="Buns N'Roses: pastelería artesana y cafetería con bollería y bebidas de autor."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Allura&family=Space+Grotesk:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="site-header">
+      <nav class="site-nav nav-left" aria-label="Principal izquierda">
+        <a href="menu.html">Carta</a>
+        <a href="#services">Pedidos</a>
+      </nav>
+
+      <a class="logo" href="#top" aria-label="Buns N Roses">
+        <img
+          src="assets/images/buns-n-roses-logo.png"
+          alt="Buns N' Roses"
+          class="brand-logo"
+        />
+      </a>
+
+      <nav class="site-nav nav-right" aria-label="Principal derecha">
+        <a href="#faq">FAQ</a>
+        <a href="#about">Sobre nosotros</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false">
+        MENÚ
+      </button>
+    </header>
+
+    <main id="top">
+      <!--HERO-->
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Pastelería · Café · Repostería artesana</p>
+          <h1>Sabores con alma de rock</h1>
+          <p class="lead">
+            Bollería y pastelería artesana, café y recetas con un toque retro.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="menu.html">Ver carta 🗲</a>
+            <a class="btn ghost" href="contact.html">Hacer pedido</a>
+          </div>
+        </div>
+      </section>
+
+      <!--MENU PREVIEW-->
+      <section id="menu" class="services section">
+        <div class="section-heading">
+          <p class="eyebrow">Especialidades</p>
+          <h2>Nuestros favoritos</h2>
+        </div>
+        <div class="grid three">
+          <article class="service-card">
+            <img
+              src="assets/images/rose-cupcake.png"
+              alt="Rose Bun"
+              class="service-img"
+            />
+            <h3>Rose Bun — €3.50</h3>
+            <p>Cupcake esponjoso con glaseado rosa y crema ligera.</p>
+          </article>
+          <article class="service-card">
+            <img
+              src="assets/images/cinnamon-roll.png"
+              alt="Imagine Cinnamon Roll"
+              class="service-img"
+            />
+            <h3>Imagine Cinnamon Roll — €3.20</h3>
+            <p>Roll de canela con frosting de queso suave.</p>
+          </article>
+          <article class="service-card">
+            <img
+              src="assets/images/hazelnut-cookie.png"
+              alt="Hazelnut Cookie"
+              class="service-img"
+            />
+            <h3>Chocolate Hazelnut Cookie — €4.50</h3>
+            <p>Crujiente cookie de chocolate y avellana.</p>
+          </article>
+        </div>
+        <div style="text-align: center; margin-top: 28px">
+          <a class="btn primary" href="menu.html">Ver carta completa</a>
+        </div>
+      </section>
+
+      <!--SERVICES-->
+      <section id="services" class="work section">
+        <div class="section-heading">
+          <p class="eyebrow">Pedidos personalizados</p>
+          <h2>Sabores y momentos</h2>
+        </div>
+        <div class="grid two">
+          <article class="case-card">
+            <div class="case-media case-media-1" aria-hidden="true"></div>
+            <h3>Cumpleaños</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              in ligula.
+            </p>
+          </article>
+          <article class="case-card">
+            <div class="case-media case-media-2" aria-hidden="true"></div>
+            <h3>Bodas</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              erat volutpat.
+            </p>
+          </article>
+          <article class="case-card">
+            <div class="case-media case-media-3" aria-hidden="true"></div>
+            <h3>Eventos corporativos</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+              amet.
+            </p>
+          </article>
+          <article class="case-card">
+            <div class="case-media case-media-4" aria-hidden="true"></div>
+            <h3>Otros eventos</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              interdum.
+            </p>
+          </article>
+        </div>
+        <div style="text-align: center; margin-top: 28px">
+          <a class="btn primary" href="contact.html">Pregúntanos</a>
+        </div>
+      </section>
+
+      <!--FAQ-->
+      <section class="faq section" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Preguntas frecuentes</h2>
+        </div>
+        <div class="faq-list">
+          <button class="faq-item" type="button" aria-expanded="false">
+            <span>¿Hacéis tartas o dulces personalizados?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-panel" hidden>
+            <p>
+              Sí, puedes pedirnos más info desde la página de contacto o
+              llamando al 600 123 456. Para encargos personalizados, contáctanos
+              con al menos 72 horas de antelación.
+            </p>
+          </div>
+
+          <button class="faq-item" type="button" aria-expanded="false">
+            <span
+              >¿Puedo hacer un pedido desde casa y recogerlo en el local?</span
+            >
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-panel" hidden>
+            <p>
+              Sí, aceptamos pedidos para recoger siempre sujetos a la
+              disponibilidad de dulces que tengamos en ese momento.
+            </p>
+          </div>
+
+          <button class="faq-item" type="button" aria-expanded="false">
+            <span>¿Tenéis opciones veganas, sin lactosa o gluten?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-panel" hidden>
+            <p>
+              Contamos con algunas opciones veganas, sin lactosa y sin gluten,
+              consúltanos en el local.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--ABOUT-->
+      <section id="about" class="about section">
+        <div class="section-heading">
+          <p class="eyebrow">Nuestra historia</p>
+          <h2>Recetas con corazón</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-media" aria-hidden="true"></div>
+          <div class="about-content">
+            <p>
+              Buns N' Roses nace de la pasión por la bollería tradicional, la
+              música de los 80 y las recetas familiares. Horneamos cada día con
+              ingredientes de calidad.
+            </p>
+            <p>
+              Nuestro estilo combina sabores clásicos con toques modernos y
+              presentaciones cuidadas.
+            </p>
+
+            <p>
+              Ven a probar un café y una pieza recién hecha, abrimos de lunes a
+              domingo.
+            </p>
+            <div class="about-actions">
+              <a
+                class="btn primary"
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noreferrer"
+                >Síguenos en Instagram</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--TESTIMONIALS-->
+      <section class="testimonials section">
+        <div class="section-heading">
+          <p class="eyebrow">Testimonios</p>
+          <h2>Lo que dicen de nosotros</h2>
+        </div>
+        <div class="grid two">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 estrellas">
+              <span aria-hidden="true">★ ★ ★ ★ ★</span>
+            </div>
+            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+            <span>Nombre Apellido</span>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 estrellas">
+              <span aria-hidden="true">★ ★ ★ ★ ★</span>
+            </div>
+            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+            <span>Nombre Apellido</span>
+          </article>
+        </div>
+      </section>
+
+      <!--HIGHLIGTH-->
+      <section class="highlight section">
+        <p class="eyebrow">Oferta</p>
+        <h2>Promoción apertura — 10% descuento</h2>
+        <p class="highlight-text">
+          Descuento en tu primer pedido personalizado hasta fin de mes.
+        </p>
+        <a class="btn primary" href="contact.html">Pedir ahora</a>
+      </section>
+
+      <section id="contact" class="cta">
+        <div>
+          <h2>Visítanos o haz tu pedido</h2>
+          <p>L-S de 9:00 a 20:00 — D 9:00 a 14:00</p>
+          <p>C/ Molona 12, Madrid</p>
+        </div>
+        <a class="btn primary" href="mailto:hola@bunsnroses.es"
+          >hola@bunsnroses.es</a
+        >
+      </section>
+    </main>
+
+    <a
+      class="back-to-top"
+      href="#top"
+      aria-label="Volver arriba"
+      title="Volver arriba"
+      >￪</a
+    >
+
+    <!--FOOTER-->
+    <footer class="site-footer">
+      <div class="footer-social" aria-label="Redes sociales">
+        <a
+          href="https://www.instagram.com"
+          aria-label="Instagram"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect
+              x="3"
+              y="3"
+              width="18"
+              height="18"
+              rx="5"
+              ry="5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+            <circle
+              cx="12"
+              cy="12"
+              r="4.2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+            <circle cx="17" cy="7" r="1.2" fill="currentColor" />
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          aria-label="LinkedIn"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect
+              x="3"
+              y="3"
+              width="18"
+              height="18"
+              rx="3"
+              ry="3"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+            <rect x="6.5" y="10" width="2.2" height="7.5" fill="currentColor" />
+            <circle cx="7.6" cy="7.3" r="1.2" fill="currentColor" />
+            <path
+              d="M11 10h2v1.2c.4-.8 1.3-1.4 2.7-1.4 2 0 3.3 1.3 3.3 3.7v4h-2.2v-3.6c0-1.2-.6-2-1.7-2-1 0-1.7.7-1.9 1.6v4h-2.2V10z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <a href="https://x.com" aria-label="X" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect
+              x="3"
+              y="3"
+              width="18"
+              height="18"
+              rx="3"
+              ry="3"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+            <path
+              d="M7 7h2.7l3.1 4.2L16 7h2l-4.3 5.4L18 17h-2.7l-3.4-4.6L8 17H6l4.6-5.5L7 7z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </div>
+      <p class="footer-meta">
+        © 2026 Buns N' Roses. Hecho con cariño y un buen ☕ por Patricia
+        Sánchez.
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

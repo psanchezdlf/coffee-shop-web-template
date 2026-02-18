@@ -1,0 +1,195 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto | Buns N' Roses</title>
+    <meta
+      name="description"
+      content="Contacto y reservas para Buns N' Roses, pastelería y cafetería."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Allura&family=Space+Grotesk:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav nav-left" aria-label="Principal izquierda">
+        <a href="menu.html">Carta</a>
+        <a href="index.html#services">Pedidos</a>
+      </nav>
+
+      <a class="logo" href="index.html#top" aria-label="Buns N Roses">
+        <img
+          src="assets/images/buns-n-roses-logo.png"
+          alt="Buns N Roses"
+          class="brand-logo"
+        />
+      </a>
+
+      <nav class="site-nav nav-right" aria-label="Principal derecha">
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#about">Sobre nosotros</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false">☰</button>
+    </header>
+
+    <main class="contact-page">
+      <section class="contact-hero">
+        <p class="eyebrow">Contacto</p>
+        <h1>Reserva o encarga tu pedido</h1>
+        <p class="lead">
+          Los pedidos para recoger estarán sujetos a disponibilidad en tienda,
+          consúltanos. Para encargos personalizados, contáctanos con al menos 72
+          horas de antelación. <br />¡Estamos deseando endulzar tu día!
+        </p>
+      </section>
+
+      <section class="contact-form">
+        <form action="#" method="post">
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="telephone">Teléfono</label>
+            <input
+              id="telephone"
+              name="telephone"
+              type="tel"
+              placeholder="600 123 456"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="tucorreo@email.com"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="service"> Asunto</label>
+            <select id="service" name="service">
+              <option>Pedido para recoger</option>
+              <option>Encargo para evento</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Cuéntanos qué necesitas y te contactaremos en breve."
+            ></textarea>
+          </div>
+          <label class="consent">
+            <input type="checkbox" required />
+            He leído y acepto la
+            <a href="privacy.html">política de privacidad</a>.
+          </label>
+          <button class="btn primary" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-social" aria-label="Redes sociales">
+        <a
+          href="https://www.instagram.com"
+          aria-label="Instagram"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect
+              x="3"
+              y="3"
+              width="18"
+              height="18"
+              rx="5"
+              ry="5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+            <circle
+              cx="12"
+              cy="12"
+              r="4.2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+            <circle cx="17" cy="7" r="1.2" fill="currentColor" />
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          aria-label="LinkedIn"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect
+              x="3"
+              y="3"
+              width="18"
+              height="18"
+              rx="3"
+              ry="3"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+            <rect x="6.5" y="10" width="2.2" height="7.5" fill="currentColor" />
+            <circle cx="7.6" cy="7.3" r="1.2" fill="currentColor" />
+            <path
+              d="M11 10h2v1.2c.4-.8 1.3-1.4 2.7-1.4 2 0 3.3 1.3 3.3 3.7v4h-2.2v-3.6c0-1.2-.6-2-1.7-2-1 0-1.7.7-1.9 1.6v4h-2.2V10z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <a href="https://x.com" aria-label="X" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect
+              x="3"
+              y="3"
+              width="18"
+              height="18"
+              rx="3"
+              ry="3"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+            <path
+              d="M7 7h2.7l3.1 4.2L16 7h2l-4.3 5.4L18 17h-2.7l-3.4-4.6L8 17H6l4.6-5.5L7 7z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </div>
+      <p class="footer-meta">
+        © 2026 Buns N' Roses. Hecho con cariño y un buen ☕ por Patricia
+        Sánchez.
+      </p>
+    </footer>
+  </body>
+</html>
