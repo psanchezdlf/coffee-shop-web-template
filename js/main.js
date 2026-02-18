@@ -41,23 +41,39 @@ if (navToggle && siteNavs.length) {
 }
 
 /* Animación al hacer scroll */
-const revealItems = document.querySelectorAll(".section, .hero-panel .card, .service-card, .case-card, .insight-card, .testimonial-card, .cta");
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.2 }
+const revealItems = document.querySelectorAll(
+  ".section, .hero-panel .card, .service-card, .case-card, .insight-card, .testimonial-card, .cta"
 );
 
-revealItems.forEach((item) => {
-  item.classList.add("reveal");
-  observer.observe(item);
-});
+try {
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    revealItems.forEach((item) => {
+      item.classList.add("reveal");
+      observer.observe(item);
+    });
+  } else {
+    // Fallback para navegadores que no soportan IntersectionObserver
+    revealItems.forEach((item) => {
+      item.classList.add("reveal", "visible");
+    });
+  }
+} catch (err) {
+  // En caso de error imprevisto, revelar los elementos para no bloquear la UI
+  revealItems.forEach((item) => item.classList.add("reveal", "visible"));
+  console.error("Reveal observer error:", err);
+}
 
 /* Funcionalidad del acordeón de FAQ */
 const faqItems = document.querySelectorAll(".faq-item");
